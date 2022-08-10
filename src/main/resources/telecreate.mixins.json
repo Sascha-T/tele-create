@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.saschat.telecreate.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ContraptionColliderMixin",
+    "TrackBlockMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

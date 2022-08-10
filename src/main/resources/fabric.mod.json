@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "telecreate",
+  "version": "${version}",
+  "name": "TeleCreate",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/telecreate/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.saschat.telecreate.client.TelecreateClient"
+    ],
+    "main": [
+      "de.saschat.telecreate.Telecreate"
+    ]
+  },
+  "mixins": [
+    "telecreate.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.18.2",
+    "immersive_portals": "*",
+    "create": "*"
+  }
+}
