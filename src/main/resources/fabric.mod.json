@@ -3,11 +3,11 @@
   "id": "telecreate",
   "version": "${version}",
   "name": "TeleCreate",
-  "description": "",
-  "authors": [],
+  "description": "An integration between Create and Immersive Portals.",
+  "authors": ["Sascha T."],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/telecreate/icon.png",
+  "icon": "assets/telecreate/logo.png",
   "environment": "*",
   "entrypoints": {
     "client": [
