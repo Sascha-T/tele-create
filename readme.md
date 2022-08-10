@@ -7,5 +7,8 @@ Immersive Portals and Create don't play well together. \
 and the rendering of contraptions across portals is buggy. \
 This project is an attempt to alleviate some of these concerns.
 
+## Addendum
+To those that like their mods finely polished and entirely without bugs from the outset, \
+I recommend waiting for an official solution, because this was written within as little time as humanly possible, and thus is liable to break.
 
 ### I have no idea how to fix the rendering yet, if you've got any pointers please feel free to make a PR/issue.

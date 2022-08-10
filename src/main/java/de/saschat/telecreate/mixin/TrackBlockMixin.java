@@ -164,12 +164,13 @@ public class TrackBlockMixin {
             BlockPos otherPos = otherPortalPos.relative(targetDirection);
             return Pair.of(otherLevel, new BlockFace(otherPos, targetDirection.getOpposite()));
         } else {
+            BlockPos pos = inboundTrack.getPos().relative(inboundTrack.getFace());
+            Vec3 offset = relevantPortal.position().subtract(new Vec3(pos.getX(), pos.getY(), pos.getZ()));
             Portal counter = findRelevantPortal(otherLevel, new BlockPos(relevantPortal.destination), inboundTrack.getFace());
-            System.out.println(counter.dimensionTo.toString());
             if(counter == null)
                 return null;
             Vec3 destPos = relevantPortal.getDestPos();
-            Vec3 newDest = new Vec3(destPos.x, Math.floor(destPos.y) - 1, destPos.z); // hardcoding it, cry in the issues i cant do shit about it
+            Vec3 newDest = destPos.subtract(offset);
             return Pair.of(otherLevel, new BlockFace(new BlockPos(newDest).relative(inboundTrack.getFace()), inboundTrack.getFace().getOpposite()));
         }
     }
