@@ -14,7 +14,7 @@ import java.util.function.Predicate;
 
 @Mixin(value = ContraptionCollider.class, remap = false)
 public class ContraptionColliderMixin {
-    @Redirect(method = "collideEntities", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;getEntitiesOfClass(Ljava/lang/Class;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;)Ljava/util/List;"))
+    @Redirect(method = "collideEntities", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;getEntitiesOfClass(Ljava/lang/Class;Lnet/minecraft/world/phys/AABB;Ljava/util/function/Predicate;)Ljava/util/List;", remap = true))
     private static List<Entity> getEntitiesOfClass(Level instance, Class aClass, AABB aabb, Predicate predicate) {
         // Wow, such advanced mixin. <doge>
         List<Entity> entitiesOfClass = instance.getEntitiesOfClass(aClass, aabb, predicate);
