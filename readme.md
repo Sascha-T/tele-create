@@ -1,5 +1,5 @@
 # ARCHIVED - I have no time or motivation to maintain this project as of now
-I'm sorry for leaving it in a relatively uncertain state, but I'm officially archiving it now until I can find the time to make & maintain an actually *good* solution.
+I'm sorry for leaving it in a relatively uncertain state so long, but I'm officially archiving it now until I can find the time to make & maintain an actually *good* solution.
 
 # TeleCreate
 *Procrastination is a bad thing - Me, after not working on features I should be working on and instead making an entirely new project.*
